@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    font-family: "Roboto", "Arial Narrow", Arial, sans-serif;
+  }
+  h1,
+  h2 {
+    font-family: "Gotham", sans-serif;
+    @apply text-main-black;
+  }
+}
+@font-face {
+  font-family: "Gotham";
+  src: url("/public/assets/fonts/FontsFree-Net-GothamBook.ttf");
+}
+
+.font-main {
+  @apply font-["Gotham"];
+}
+
+.font-alt {
+  font-family: "Open Sans";
+}
+
+.title-sm {
+  @apply uppercase font-medium tracking-[0.28em] text-[10px] text-dark-gold;
+}
+.phone::before {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  background-color: #c8b9ad;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+
+.token {
+  @apply bg-no-repeat md:bg-[url('assets/images/coin.png')] md:bg-[length:230px_400px] lg:bg-[length:300px_400px] bg-center bg-right;
+}
+.join {
+  @apply bg-no-repeat md:bg-[url('assets/images/partner-bg.png')] md:bg-[length:250px_400px] lg:bg-[length:280px_400px] bg-center bg-right;
+}
