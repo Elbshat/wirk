@@ -566,17 +566,17 @@ h1,
   margin-bottom: 1.25rem;
 }
 
-.my-24 {
-  margin-top: 6rem;
-  margin-bottom: 6rem;
+.my-16 {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
 }
 
 .mt-10 {
   margin-top: 2.5rem;
 }
 
-.mt-\[30\%\] {
-  margin-top: 30%;
+.mt-14 {
+  margin-top: 3.5rem;
 }
 
 .mt-8 {
@@ -627,8 +627,8 @@ h1,
   height: 100%;
 }
 
-.h-\[70vh\] {
-  height: 70vh;
+.h-\[51vh\] {
+  height: 51vh;
 }
 
 .h-\[60vh\] {
@@ -641,10 +641,6 @@ h1,
 
 .h-32 {
   height: 8rem;
-}
-
-.h-\[65vh\] {
-  height: 65vh;
 }
 
 .max-h-\[75vh\] {
@@ -738,10 +734,6 @@ h1,
 
 .justify-between {
   justify-content: space-between;
-}
-
-.justify-around {
-  justify-content: space-around;
 }
 
 .gap-4 {
@@ -1229,6 +1221,21 @@ h1,
   }
 }
 
+.hero::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  background-image: url(/assets/images/bg-pattern.png);
+  background-repeat: repeat;
+  background-position: 0 0;
+  background-color: transparent;
+  background-size: 3px 3px;
+}
+
 .before\:aspect-square::before {
   content: var(--tw-content);
   aspect-ratio: 1 / 1;
@@ -1237,6 +1244,26 @@ h1,
 .before\:w-full::before {
   content: var(--tw-content);
   width: 100%;
+}
+
+.hover\:bg-slate-100:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(241 245 249 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-slate-50:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(248 250 252 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-white:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.hover\:text-main-black:hover {
+  --tw-text-opacity: 1;
+  color: rgb(44 42 39 / var(--tw-text-opacity));
 }
 
 @media (min-width: 640px) {
@@ -1266,8 +1293,17 @@ h1,
     order: 2;
   }
 
+  .md\:my-20 {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+  }
+
   .md\:mt-20 {
     margin-top: 5rem;
+  }
+
+  .md\:mt-0 {
+    margin-top: 0px;
   }
 
   .md\:mt-14 {
@@ -1290,12 +1326,16 @@ h1,
     display: none;
   }
 
-  .md\:h-\[60vh\] {
-    height: 60vh;
-  }
-
   .md\:h-\[55vh\] {
     height: 55vh;
+  }
+
+  .md\:h-\[45vh\] {
+    height: 45vh;
+  }
+
+  .md\:h-\[40vh\] {
+    height: 40vh;
   }
 
   .md\:w-\[45vw\] {

@@ -45,3 +45,18 @@
 .join {
   @apply bg-no-repeat md:bg-[url('assets/images/partner-bg.png')] md:bg-[length:250px_400px] lg:bg-[length:280px_400px] bg-center bg-right;
 }
+
+.hero::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  background-image: url(/assets/images/bg-pattern.png);
+  background-repeat: repeat;
+  background-position: 0 0;
+  background-color: transparent;
+  background-size: 3px 3px;
+}
